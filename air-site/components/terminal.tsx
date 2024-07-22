@@ -24,7 +24,7 @@ const Terminal = () => {
         //     </div>
         // </section>
         <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-            <Card isPressable className="terminal-window md:w-3/5 lg:w-2/5 max-w-[900px] min-h-[360px] text-left dark:bg-default-100/80 border-1 border-gray-400 dark:border-none rounded-3xl">
+            <Card isPressable className="terminal-window md:w-3/5 md:min-w-[500px] lg:w-2/5 max-w-[900px] min-h-[360px] text-left dark:bg-default-100/80 border-1 border-gray-400 dark:border-none rounded-3xl transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-[105%]">
                 <CardHeader className="flex flex-row-reverse bg-zinc-300/80 dark:bg-default-100/20">
                     <div className="button w-3 h-3 inline-block bg-red-500 rounded-full mx-1"></div>
                     <div className="button w-3 h-3 inline-block bg-yellow-400 rounded-full mx-1"></div>
@@ -42,21 +42,21 @@ const Terminal = () => {
                             <div className="flex flex-col">
                                 <div>&nbsp;</div>
                                 <div>&nbsp;</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)))&nbsp;&nbsp;</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(((&nbsp;&nbsp;</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-----+&nbsp;&nbsp;</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|]&nbsp;&nbsp;</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)))&nbsp;</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(((&nbsp;</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-----+&nbsp;</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|]&nbsp;</div>
                                 <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-----'</div>
                                 <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___________&nbsp;&nbsp;</div>
-                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`---------'&nbsp;&nbsp;</div>
+                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`---------'&nbsp;</div>
                             </div>
                             <div className="flex flex-col">
                                 <div className="text-cyan-700 dark:text-cyan-300">air@airwu.dev</div>
                                 <div>---------------</div>
-                                <div><span className="text-cyan-700 dark:text-cyan-200">Name:</span> Aaron Wu</div>
-                                <div><span className="text-cyan-700 dark:text-cyan-200">Education:</span> UC Merced</div>
-                                <div><span className="text-cyan-700 dark:text-cyan-200">Location:</span> California</div>
-                                <div><span className="text-cyan-700 dark:text-cyan-200">Uptime:</span> 19 years and counting</div>
+                                <div><span className="text-cyan-700 dark:text-cyan-200">😊 Name:</span> Aaron Wu</div>
+                                <div><span className="text-cyan-700 dark:text-cyan-200">🏫 Education:</span> UC Merced</div>
+                                <div><span className="text-cyan-700 dark:text-cyan-200">📍 Location:</span> California</div>
+                                <div><span className="text-cyan-700 dark:text-cyan-200">🔺 Uptime:</span> 19 years and counting</div>
                                 <div><span className="text-cyan-700 dark:text-cyan-200">DE:</span> Gnome 46.3.1</div>
                                 <div><span className="text-cyan-700 dark:text-cyan-200">WM:</span> Mutter</div>
                                 <div><span className="text-cyan-700 dark:text-cyan-200">Shell:</span> fish 3.7.0</div>
