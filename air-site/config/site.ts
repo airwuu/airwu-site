@@ -27,18 +27,6 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Projects",
-      href: "/calendar",
-    },
-    {
-      label: "Blog",
-      href: "/settings",
-    },
-    {
-      label: "Resume",
-      href: "/logout",
-    },
-    {
       label: "Email",
       href: "/profile",
     },
@@ -52,7 +40,11 @@ export const siteConfig = {
     },
     {
       label: "Discord",
-      href: "/team",
+      href: "/projects",
+    },
+    {
+      label: "Resume",
+      href: "/logout",
     },
   ],
   links: {
