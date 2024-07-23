@@ -10,12 +10,13 @@ import { GithubIcon } from "@/components/icons";
 import React, {useState} from 'react'
 
 import Terminal from "@/components/terminal"
+import Experience from "@/components/experience"
 
 export default function Home() {
   const [selected, setSelected] = React.useState("photos");
   return (
     <>
-    <div className="flex w-full flex-col items-center border-8 border-red-400">
+    <div className="flex w-full flex-col items-center ">
       <Tabs 
         aria-label="Options"         
         selectedKey={selected}
@@ -24,12 +25,8 @@ export default function Home() {
         <Tab key="home" title="Home">
           <Terminal/>
         </Tab>
-        <Tab key="skills" title="Skills">
-          <Card>
-            <CardBody>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </CardBody>
-          </Card>  
+        <Tab key="experience" title="Experience">
+          <Experience/>
         </Tab>
         <Tab key="projects" title="Projects">
           <Card>

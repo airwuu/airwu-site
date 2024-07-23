@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "airwu.dev",
-  description: "Aaron's personal website",
+  description: "Aaron's website",
   navItems: [
     {
       label: "Home",
@@ -52,6 +52,6 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/airwu",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    sponsor: "", //Replace with resume link
   },
 };
