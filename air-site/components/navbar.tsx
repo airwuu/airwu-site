@@ -9,11 +9,11 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
+
 import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
-import {Avatar} from "@nextui-org/react";
+import {Avatar, Popover, PopoverTrigger, PopoverContent} from "@nextui-org/react";
 import NextLink from "next/link";
 import clsx from "clsx";
 
@@ -23,9 +23,7 @@ import {
   LinkedinIcon, 
   GithubIcon,
   DiscordIcon,
-  HeartFilledIcon,
-  SearchIcon,
-  Logo,
+  MailIcon
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -84,15 +82,25 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-10">
           <div className="socials sm:flex gap-2">
+          <Link isExternal aria-label="Email" href={siteConfig.links.mail}>
+                <MailIcon className="text-default-500" />
+            </Link>
             <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
               <LinkedinIcon className="text-default-500" />
             </Link>
             <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-              <GithubIcon className="text-default-500" />
+                <GithubIcon className="text-default-500" />
             </Link>
-            <Link aria-label="Discord" onClick={()=>{navigator.clipboard.writeText("airwu")}} >
-              <DiscordIcon className="text-default-500" />
-            </Link>
+            <Popover placement="bottom">
+              <PopoverTrigger>
+                <Link aria-label="Discord" onClick={()=>{navigator.clipboard.writeText("airwu")}} >
+                  <DiscordIcon className="text-default-500" />
+                </Link>
+              </PopoverTrigger>
+              <PopoverContent>
+                copied "@airwu" to clipboard
+              </PopoverContent>
+            </Popover>
           </div>
           <ThemeSwitch />
         </NavbarItem>
@@ -102,7 +110,7 @@ export const Navbar = () => {
             isExternal
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
-            href={siteConfig.links.sponsor}
+            href={siteConfig.links.resume}
             // startContent={<HeartFilledIcon className="text-danger" />}
             variant="flat"
           >
@@ -139,7 +147,7 @@ export const Navbar = () => {
                       ? "primary"
                       : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}

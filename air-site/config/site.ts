@@ -28,23 +28,19 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: "Email",
-      href: "/profile",
+      href: "mailto:wu@ucmerced.edu",
     },
     {
       label: "Linkedin",
-      href: "/dashboard",
+      href: "https://linkedin.com/in/airwu",
     },
     {
       label: "Github",
-      href: "/projects",
-    },
-    {
-      label: "Discord",
-      href: "/projects",
+      href: "https://github.com/airwuu",
     },
     {
       label: "Resume",
-      href: "/logout",
+      href: "https://drive.google.com/file/d/1-Hom_NUzmNiUlRIBktHUnA1UwOtPrX3d/view?usp=sharing",
     },
   ],
   links: {
@@ -52,6 +48,7 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/airwu",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "", //Replace with resume link
+    mail: "mailto:wu@ucmerced.edu",
+    resume: "https://drive.google.com/file/d/1-Hom_NUzmNiUlRIBktHUnA1UwOtPrX3d/view?usp=sharing", //Replace with resume link
   },
 };
