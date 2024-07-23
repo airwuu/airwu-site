@@ -62,7 +62,7 @@ const height = 700;
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-center py-8 md:py-10 md:flex-row md:items-start space-x-4 justify-center">
+    <div className="flex flex-col items-center py-8 md:py-10 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4 justify-center">
         <Table className="">
           <TableHeader columns={columns}>
               {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
