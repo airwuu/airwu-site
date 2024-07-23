@@ -9,14 +9,14 @@ import Experience from "@/components/experience"
 import ProjectPage from "@/components/projectPage"
 
 export default function Home() {
-  const [selected, setSelected] = React.useState("photos");
+  const [selected, setSelected] = React.useState<any|null>();
   return (
     <>
     <div className="flex w-full flex-col items-center">
       <Tabs 
         aria-label="Options"         
         selectedKey={selected}
-        onSelectionChange={setSelected}
+        onSelectionChange={(string)=>setSelected(string)}
       >
         <Tab key="home" title="Home">
           <Terminal/>
