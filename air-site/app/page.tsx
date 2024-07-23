@@ -11,12 +11,13 @@ import React, {useState} from 'react'
 
 import Terminal from "@/components/terminal"
 import Experience from "@/components/experience"
+import ProjectPage from "@/components/projectPage"
 
 export default function Home() {
   const [selected, setSelected] = React.useState("photos");
   return (
     <>
-    <div className="flex w-full flex-col items-center ">
+    <div className="flex w-full flex-col items-center">
       <Tabs 
         aria-label="Options"         
         selectedKey={selected}
@@ -29,11 +30,7 @@ export default function Home() {
           <Experience/>
         </Tab>
         <Tab key="projects" title="Projects">
-          <Card>
-            <CardBody>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </CardBody>
-          </Card>  
+          <ProjectPage/>
         </Tab>
       </Tabs>
     </div>  

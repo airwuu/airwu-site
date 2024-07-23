@@ -76,14 +76,14 @@ const Experience = () => {
           </TableBody>
         </Table>
         {/* ------------------------------------------ */}
-        <Table  className="h-full content-normal ">
+        <Table  className="h-full content-normal  pb-20">
           <TableHeader>
               <TableColumn>WORK EXPERIENCE</TableColumn>
           </TableHeader>
           <TableBody >
             <TableRow key="1">
-              <TableCell >
-              <Accordion defaultExpandedKeys={["1"]} >
+              <TableCell>
+              <Accordion defaultExpandedKeys={["0"]} >
                 <AccordionItem key="1" aria-label="ML Intern" subtitle="Wilsilica - Lumos Control" title="ML Intern">
                   <div>Aug. 2021 - Aug. 2022</div>
                   <div className="py-2 space-x-1">

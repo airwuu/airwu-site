@@ -27,7 +27,6 @@ import {
   SearchIcon,
   Logo,
 } from "@/components/icons";
-import profilePicture from "./components/airPFP.png"
 
 export const Navbar = () => {
   // const searchInput = (
@@ -91,7 +90,7 @@ export const Navbar = () => {
             <Link isExternal aria-label="Github" href={siteConfig.links.github}>
               <GithubIcon className="text-default-500" />
             </Link>
-            <Link isExternal aria-label="Discord" href={siteConfig.links.discord}>
+            <Link aria-label="Discord" onClick={()=>{navigator.clipboard.writeText("airwu")}} >
               <DiscordIcon className="text-default-500" />
             </Link>
           </div>
