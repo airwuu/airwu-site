@@ -1,36 +1,35 @@
 "use client";
-import {Tab, Tabs} from "@nextui-org/react";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import React, {useState} from 'react'
+import { Tab, Tabs } from "@nextui-org/react";
+import React from "react";
 
-import Terminal from "@/components/terminal"
-import Experience from "@/components/experience"
-import ProjectPage from "@/components/projectPage"
+import Terminal from "@/components/terminal";
+import Experience from "@/components/experience";
+import ProjectPage from "@/components/projectPage";
 
 export default function Home() {
-  const [selected, setSelected] = React.useState<any|null>();
+  const [selected, setSelected] = React.useState<any | null>();
+
   return (
     <>
-    <div className="flex w-full flex-col items-center">
-      <Tabs 
-        aria-label="Options"         
-        selectedKey={selected}
-        onSelectionChange={(string)=>setSelected(string)}
-      >
-        <Tab key="home" title="Home">
-          <Terminal/>
-        </Tab>
-        <Tab key="experience" title="Experience">
-          <Experience/>
-        </Tab>
-        <Tab key="projects" title="Projects">
-          <ProjectPage/>
-        </Tab>
-      </Tabs>
-    </div>  
-    
-    {/* <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+      <div className="flex w-full flex-col items-center">
+        <Tabs
+          aria-label="Options"
+          selectedKey={selected}
+          onSelectionChange={(string) => setSelected(string)}
+        >
+          <Tab key="home" title="Home">
+            <Terminal />
+          </Tab>
+          <Tab key="experience" title="Experience">
+            <Experience />
+          </Tab>
+          <Tab key="projects" title="Projects">
+            <ProjectPage />
+          </Tab>
+        </Tabs>
+      </div>
+
+      {/* <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <div className="inline-block max-w-lg text-center justify-center">
         <h1 className={title()}>Make&nbsp;</h1>
         <h1 className={title({ color: "violet" })}>beautiful&nbsp;</h1>
@@ -73,7 +72,6 @@ export default function Home() {
         </Snippet>
       </div>
     </section> */}
-
     </>
   );
 }

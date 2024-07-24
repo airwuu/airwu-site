@@ -53,7 +53,9 @@ export default function RootLayout({
                 href=""
                 title=""
               >
-                <span className="text-default-600">© 2024 Aaron Wu. All rights reserved.</span>
+                <span className="text-default-600">
+                  © 2024 Aaron Wu. All rights reserved.
+                </span>
               </Link>
             </footer>
           </div>

@@ -49,6 +49,7 @@ export const siteConfig = {
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
     mail: "mailto:wu@ucmerced.edu",
-    resume: "https://drive.google.com/file/d/1-Hom_NUzmNiUlRIBktHUnA1UwOtPrX3d/view?usp=sharing", //Replace with resume link
+    resume:
+      "https://drive.google.com/file/d/1-Hom_NUzmNiUlRIBktHUnA1UwOtPrX3d/view?usp=sharing", //Replace with resume link
   },
 };

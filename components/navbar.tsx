@@ -9,21 +9,22 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
-
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
-import { link as linkStyles } from "@nextui-org/theme";
-import {Avatar, Popover, PopoverTrigger, PopoverContent} from "@nextui-org/react";
+import {
+  Avatar,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@nextui-org/react";
 import NextLink from "next/link";
-import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-  LinkedinIcon, 
+  LinkedinIcon,
   GithubIcon,
   DiscordIcon,
-  MailIcon
+  MailIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -54,7 +55,10 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-3" href="/">
             {/* <Logo /> */}
-            <Avatar size="sm" src="https://cdn.discordapp.com/avatars/205847872904757248/15f8a114e2a08550b6bd630a35f9ee1d?size=1024" />
+            <Avatar
+              size="sm"
+              src="https://cdn.discordapp.com/avatars/205847872904757248/15f8a114e2a08550b6bd630a35f9ee1d?size=1024"
+            />
             <p className="font-bold text-inherit">AIRWU</p>
           </NextLink>
         </NavbarBrand>
@@ -82,23 +86,34 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-10">
           <div className="socials sm:flex gap-2">
-          <Link isExternal aria-label="Email" href={siteConfig.links.mail}>
-                <MailIcon className="text-default-500" />
+            <Link isExternal aria-label="Email" href={siteConfig.links.mail}>
+              <MailIcon className="text-default-500" />
             </Link>
-            <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+            <Link
+              isExternal
+              aria-label="Linkedin"
+              href={siteConfig.links.linkedin}
+            >
               <LinkedinIcon className="text-default-500" />
             </Link>
             <Link isExternal aria-label="Github" href={siteConfig.links.github}>
-                <GithubIcon className="text-default-500" />
+              <GithubIcon className="text-default-500" />
             </Link>
             <Popover placement="bottom">
               <PopoverTrigger>
-                <Link aria-label="Discord" onClick={()=>{navigator.clipboard.writeText("airwu")}} >
+                <Link
+                  aria-label="Discord"
+                  onClick={() => {
+                    navigator.clipboard.writeText("airwu");
+                  }}
+                >
                   <DiscordIcon className="text-default-500" />
                 </Link>
               </PopoverTrigger>
               <PopoverContent>
-                copied "@airwu" to clipboard
+                <p>
+                  copied <q>@airwu</q> to clipboard
+                </p>
               </PopoverContent>
             </Popover>
           </div>
@@ -118,7 +133,7 @@ export const Navbar = () => {
           </Button>
         </NavbarItem>
       </NavbarContent>
-{/* ------------------------------------------------------------------------------------------------- */}
+      {/* ------------------------------------------------------------------------------------------------- */}
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <div className="socials sm:flex gap-2">
           {/* <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
