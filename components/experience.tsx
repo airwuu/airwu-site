@@ -60,8 +60,9 @@ const columns = [
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-center py-8 md:py-10 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4 justify-center">
-      <Table className="">
+    // <div className="flex flex-col items-center py-8 md:py-10 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4 justify-center">
+    <div className="gap-2 grid grid-rows-2 md:grid-cols-2  auto-cols-fr auto-rows-fr py-8 md:py-10">  
+      <Table aria-label="Table of skills and technologies I use" className="" classNames={{wrapper: 'h-full'}}>
         <TableHeader columns={columns}>
           {(column) => (
             <TableColumn key={column.key}>{column.label}</TableColumn>
@@ -78,7 +79,7 @@ const Experience = () => {
         </TableBody>
       </Table>
       {/* ------------------------------------------ */}
-      <Table className="h-full content-normal  pb-20">
+      <Table classNames={{wrapper: 'h-full'}} aria-label="Table of my work experiences">
         <TableHeader>
           <TableColumn>WORK EXPERIENCE</TableColumn>
         </TableHeader>
