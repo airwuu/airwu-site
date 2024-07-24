@@ -100,7 +100,7 @@ export const Navbar = () => {
               <GithubIcon className="text-default-500" />
             </Link>
             <Popover placement="bottom">
-              <PopoverTrigger>
+              <PopoverTrigger className="cursor-pointer">
                 <Link
                   aria-label="Discord"
                   onClick={() => {
