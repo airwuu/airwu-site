@@ -1,6 +1,6 @@
 // import {connect} from 'react-redux'
 import { Card, CardBody, Chip, CardFooter, Image } from "@nextui-org/react";
-
+import React, { useRef, useEffect } from 'react';
 import airtab from "../public/images/airtab.png";
 import croppy from "../public/images/croppy.png";
 import fabrik from "../public/images/fabrik.png";
@@ -65,7 +65,27 @@ const ProjectPage = () => {
       tech: ["React", "Socket.io", "Firebase"],
     },
   ];
+  const scrollRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const handleWheel = (event: WheelEvent) => {
+      if (scrollRef.current) {
+        event.preventDefault();
+        scrollRef.current.scrollLeft += event.deltaY;
+      }
+    };
+
+    const scrollElement = scrollRef.current;
+    if (scrollElement) {
+      scrollElement.addEventListener('wheel', handleWheel);
+    }
+
+    return () => {
+      if (scrollElement) {
+        scrollElement.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, []);
   return (
     <div className="gap-2 grid grid-cols-2 auto-rows-fr sm:grid-cols-4 py-8 md:py-10">
       {list.map((item, index) => (
@@ -95,8 +115,8 @@ const ProjectPage = () => {
             </p>
           </CardBody>
           <CardFooter className="flex flex-col text-small text-left items-start space-y-1">
-            <div>
-              <ul className="flex flex-row space-x-1 overflow-x-auto">
+            <div style={{display: 'flex', overflowX: 'auto', width: '100%'}} className="scrollbar-hide" ref={scrollRef}>
+              <ul className="flex flex-row space-x-1">
                 {item.tech.map((technology, index2) => (
                   <a key={index2} href="/#">
                     <Chip
