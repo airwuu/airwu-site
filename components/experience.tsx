@@ -61,7 +61,7 @@ const columns = [
 const Experience = () => {
   return (
     // <div className="flex flex-col items-center py-8 md:py-10 md:flex-row md:items-start space-y-4 md:space-y-0 md:space-x-4 justify-center">
-    <div className="gap-2 grid grid-rows-2 md:grid-cols-2  auto-cols-fr auto-rows-fr py-8 md:py-10">
+    <div className="gap-2 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2  auto-cols-fr auto-rows-fr py-8 md:py-10">
       <Table
         aria-label="Table of skills and technologies I use"
         className=""

@@ -29,19 +29,19 @@ const Terminal = () => {
         // isPressable
         className="terminal-window md:w-3/5 md:min-w-[500px] lg:w-2/5 max-w-[900px] min-h-[380px] md:min-h-[360px] text-left dark:bg-default-100/80 border-1 border-gray-400 dark:border-none rounded-3xl transition ease-in-out hover:-translate-y-1 hover:scale-[101%]"
       >
-        <CardHeader className="flex flex-row-reverse bg-zinc-300/80 dark:bg-default-100/20">
+        <CardHeader className="flex flex-row-reverse bg-zinc-300/30 dark:bg-default-100/20">
           <div className="button w-3 h-3 inline-block bg-red-500 rounded-full mx-1" />
           <div className="button w-3 h-3 inline-block bg-yellow-400 rounded-full mx-1" />
           <div className="button w-3 h-3 inline-block bg-green-500 rounded-full mx-1" />
         </CardHeader>
-        <CardBody className="terminal-body scrollbar-hide inline-block h-72  bg-zinc-200 dark:bg-default-100/80">
+        <CardBody className="terminal-body scrollbar-hide inline-block h-72  bg-zinc-200/30 dark:bg-default-100/80">
           <div className="terminal-text flex flex-col md:text-sm text-xs font-mono ">
             <div className="first-line flex flexrow">
               <div className="text-cyan-700 dark:text-cyan-200">
                 [air@airwu.dev:~]
               </div>
               <div>$&nbsp;</div>
-              <div className="relative w-[max-content] font-mono before:absolute before:inset-0 before:animate-typewriteronce before:bg-zinc-200 dark:before:bg-default-100 after:absolute after:inset-0 after:w-[0.125em] after:animate-caretonce after:bg-black dark:after:bg-white">
+              <div className="relative w-[max-content] font-mono before:absolute before:inset-0 before:animate-typewriteronce before:bg-zinc-100 dark:before:bg-default-100 after:absolute after:inset-0 after:w-[0.125em] after:animate-caretonce after:bg-black dark:after:bg-white">
                 neofetch
               </div>
             </div>
@@ -153,7 +153,7 @@ const Terminal = () => {
                 [air@airwu.dev:~]
               </div>
               <div>$&nbsp;</div>
-              <div className="relative w-[max-content] font-mono before:absolute before:inset-0 before:animate-typewriter before:bg-zinc-200 dark:before:bg-default-100 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black dark:after:bg-white">
+              <div className="relative w-[max-content] font-mono before:absolute before:inset-0 before:animate-typewriter before:bg-zinc-100 dark:before:bg-default-100 after:absolute after:inset-0 after:w-[0.125em] after:animate-caret after:bg-black dark:after:bg-white">
                 welcome to my website :)
               </div>
             </div>
