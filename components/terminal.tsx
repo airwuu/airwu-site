@@ -27,7 +27,7 @@ const Terminal = () => {
     <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
       <Card
         isPressable
-        className="terminal-window md:w-3/5 md:min-w-[500px] lg:w-2/5 max-w-[900px] min-h-[360px] text-left dark:bg-default-100/80 border-1 border-gray-400 dark:border-none rounded-3xl transition ease-in-out hover:-translate-y-1 hover:scale-[101%]"
+        className="terminal-window md:w-3/5 md:min-w-[500px] lg:w-2/5 max-w-[900px] min-h-[380px] md:min-h-[360px] text-left dark:bg-default-100/80 border-1 border-gray-400 dark:border-none rounded-3xl transition ease-in-out hover:-translate-y-1 hover:scale-[101%]"
       >
         <CardHeader className="flex flex-row-reverse bg-zinc-300/80 dark:bg-default-100/20">
           <div className="button w-3 h-3 inline-block bg-red-500 rounded-full mx-1" />
