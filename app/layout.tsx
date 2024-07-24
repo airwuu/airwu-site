@@ -53,7 +53,7 @@ export default function RootLayout({
                 href=""
                 title=""
               >
-                <span className="text-default-600">
+                <span className="text-default-300">
                   © 2024 Aaron Wu. All rights reserved.
                 </span>
               </Link>
