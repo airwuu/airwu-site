@@ -64,13 +64,14 @@ module.exports = {
       themes: {
         light: {
           colors: {
-            background: "#f7fdff"
+            background: "#ffffff"
           }
         },
         dark: {
           colors: {
-            background: "#0b0c12",
-            secondary: "#76aab0"
+            background: "#09131f",
+            secondary: "#76aab0",
+            
           }
         }
       }
