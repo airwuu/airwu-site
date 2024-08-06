@@ -57,14 +57,14 @@ const ProjectPage = () => {
       link: "https://github.com/airwuu/Tetris",
       tech: ["Java"],
     },
-    {
-      title: "Word Boba",
-      img: wordboba,
-      description:
-        "A WIP multiplayer word game that is inspired by Bomb Party @ JKLM.FUN",
-      link: "/",
-      tech: ["React", "Socket.io", "Firebase"],
-    },
+    // {
+    //   title: "Word Boba",
+    //   img: wordboba,
+    //   description:
+    //     "A WIP multiplayer word game that is inspired by Bomb Party @ JKLM.FUN",
+    //   link: "/",
+    //   tech: ["React", "Socket.io", "Firebase"],
+    // },
   ];
   const scrollRef = useRef<HTMLDivElement>(null);
 
