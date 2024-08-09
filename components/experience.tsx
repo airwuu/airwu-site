@@ -64,7 +64,7 @@ const Experience = () => {
     <div className="gap-2 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2  auto-cols-fr auto-rows-fr py-8 md:py-10">
       <Table
         aria-label="Table of skills and technologies I use"
-        className=""
+        className="border-1 border-gray-400 dark:border-none rounded-xl"
         classNames={{ wrapper: "h-full" }}
       >
         <TableHeader columns={columns}>
@@ -85,6 +85,7 @@ const Experience = () => {
       {/* ------------------------------------------ */}
       <Table
         aria-label="Table of my work experiences"
+        className="border-1 border-gray-400 dark:border-none rounded-xl"
         classNames={{ wrapper: "h-full" }}
       >
         <TableHeader>

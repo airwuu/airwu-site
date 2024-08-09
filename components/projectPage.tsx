@@ -38,7 +38,7 @@ const ProjectPage = () => {
     {
       title: "airtab",
       img: airtab,
-      description: "My personal new tab extension that is air and sky themed",
+      description: "My personal new tab extension that sky and air themed",
       link: "https://github.com/airwuu/air-tab",
       tech: ["React", "JavaScript", "HTML"],
     },
@@ -46,7 +46,7 @@ const ProjectPage = () => {
       title: "Tic Tac Toe AI",
       img: tictactoe,
       description:
-        "A playable CLI Tic Tac Toe game against an AI of varying difficulties",
+        "A playable CLI Tic Tac Toe game against a smart AI using graphs",
       link: "https://github.com/airwuu/tictactoe_ai",
       tech: ["C++"],
     },
@@ -96,7 +96,7 @@ const ProjectPage = () => {
           key={index}
           isHoverable
           isPressable
-          className="md:w-[200px] h-full"
+          className="md:w-[200px] h-full border-1 border-gray-400 dark:border-none"
           shadow="sm"
           onPress={() => window.open(`${item.link}`, "_blank")}
         >
