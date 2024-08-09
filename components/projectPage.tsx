@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from "react";
 
 import airtab from "../public/images/airtab.png";
 import croppy from "../public/images/croppy.png";
-import fabrik from "../public/images/fabrik.png";
+import fabrik from "../public/images/fabrik.gif";
 import rufina from "../public/images/rufina.png";
 import tetris from "../public/images/tetris.gif";
 import wordboba from "../public/images/wordboba.png";
@@ -12,20 +12,20 @@ import tictactoe from "../public/images/tictactoe.png";
 const ProjectPage = () => {
   const list = [
     {
-      title: "Rufina",
-      img: rufina,
-      description:
-        "A chat bot designed to help UC Merced students compare menus",
-      link: "https://github.com/airwuu/UCM-Bot",
-      tech: ["Typescript"],
-    },
-    {
       title: "fabrik-arm",
       img: fabrik,
       description:
         "An implmentation of FABRIK inverse kinematics with a GUI control interface",
       link: "https://github.com/airwuu/fabrik-arm",
       tech: ["Python", "Matplotlib"],
+    },
+    {
+      title: "Rufina",
+      img: rufina,
+      description:
+        "A chat bot designed to help UC Merced students compare menus",
+      link: "https://github.com/airwuu/UCM-Bot",
+      tech: ["Typescript"],
     },
     {
       title: "croppydeals",
