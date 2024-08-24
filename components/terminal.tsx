@@ -115,11 +115,11 @@ const Terminal = () => {
                 </div>
                 <div>
                   <span className="text-cyan-700 dark:text-cyan-200">DE:</span>{" "}
-                  Gnome 46.3.1
+                  Hyprland
                 </div>
                 <div>
                   <span className="text-cyan-700 dark:text-cyan-200">WM:</span>{" "}
-                  Mutter
+                  Sway
                 </div>
                 <div>
                   <span className="text-cyan-700 dark:text-cyan-200">
