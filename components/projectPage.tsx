@@ -9,6 +9,7 @@ import rufina from "../public/images/rufina.png";
 import tetris from "../public/images/tetris.gif";
 import wordboba from "../public/images/wordboba.png";
 import tictactoe from "../public/images/tictactoe.png";
+import eggstronaut from "../public/images/eggstronaut.png"
 const ProjectPage = () => {
   const list = [
     {
@@ -56,6 +57,13 @@ const ProjectPage = () => {
       description: "A fully playable clone of Tetris plus more modern features",
       link: "https://github.com/airwuu/Tetris",
       tech: ["Java"],
+    },
+    {
+      title: "eggstronaut",
+      img: eggstronaut,
+      description: "A game submission to the GMTK 2024 themed around space travel",
+      link: "https://github.com/game-dev-besties/chicken-game",
+      tech: ["GDscript"],
     },
     // {
     //   title: "Word Boba",
