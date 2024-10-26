@@ -10,6 +10,7 @@ import tetris from "../public/images/tetris.gif";
 import wordboba from "../public/images/wordboba.png";
 import tictactoe from "../public/images/tictactoe.png";
 import eggstronaut from "../public/images/eggstronaut.png"
+import storyscape from "../public/images/storyscape.png"
 const ProjectPage = () => {
   const list = [
     {
@@ -19,6 +20,13 @@ const ProjectPage = () => {
         "An implmentation of FABRIK inverse kinematics with a GUI control interface",
       link: "https://github.com/airwuu/fabrik-arm",
       tech: ["Python", "Matplotlib"],
+    },
+    {
+      title: "Storyscape",
+      img: storyscape,
+      description: "An app that uses semantic voice analysis to better reading comprehension",
+      link: "https://github.com/catfeeshing/storyscape",
+      tech: ["React","Typescript", "Next.js", "HumeAI", "Gemini", "Firebase"],
     },
     {
       title: "Rufina",
@@ -65,6 +73,7 @@ const ProjectPage = () => {
       link: "https://github.com/game-dev-besties/chicken-game",
       tech: ["GDscript"],
     },
+    
     // {
     //   title: "Word Boba",
     //   img: wordboba,

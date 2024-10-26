@@ -1,3 +1,4 @@
+export const dynamic = 'force-static'
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { Link } from "@nextui-org/link";
